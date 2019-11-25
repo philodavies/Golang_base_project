@@ -92,8 +92,6 @@ test:
 	@echo "=====> Total test coverage: <====="
 	@echo ""
 	@go tool cover -func coverage.cov
-
-test-html: test
 	@go tool cover -html coverage.cov -o coverage.html
 
 .PHONY: unconvert
